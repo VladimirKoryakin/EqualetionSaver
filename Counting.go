@@ -56,8 +56,8 @@ func sq_ur(a, b, c float64) (float64, float64, bool) {
 		return 0, 0, false
 	} else {
 		d := math.Sqrt(b*b - 4*a*c)
-		x1 := (-b + d) / 2
-		x2 := (-b - d) / 2
+		x1 := (-b + d) / (2*a)
+		x2 := (-b - d) / (2*a)
 		return x1, x2, true
 	}
 }
